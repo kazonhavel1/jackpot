@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="C:\Users\loleu\.vscode\jackpot\script.js" rel="script">
+    <style>
+        .bg-dark{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .slot {
+            width: 200px;
+            height: 200px;
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rounded {
+            width: 200px;
+            height: 200px;
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background-image {
+            background-image: url('images/WhatsApp Image 2023-10-24 at 19.41.45_3f47b21e.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        button {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .d-flex{
+            display: flex;
+            max-width: 100%;
+        }
+    </style>
+    <title>JackPot</title>
+</head>
+<body class="p-3 mb-2 bg-dark text-white py-4">   
+    <div class="text-center">
+        <div class="spinner-grow text-light" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <a>
+            Jackpot do Arthorias
+        </a>
+        <span class="spinner-grow text-light"></span>
+    </div>
+    <div class="container pt-4 border border-5 p-5 m-5 background-image">
+        <div class="d-flex justify-content-center align-items-center border border-4">
+            <div class="slot">
+                <img src="images\images_resized.png" alt="Knife" class="rounded d-flex">
+            </div>
+            <div class="m"></div>
+            <div class="slot">
+                <img src="images\images_resized.png" alt="Carta" class="rounded d-flex">
+            </div>
+            <div class="m"></div>
+            <div class="slot">
+                <img src="images\images_resized.png" alt="Seven" class="rounded d-flex">
+            </div>
+        </div>
+        <button class="btn btn-danger" id="spin">Girar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
